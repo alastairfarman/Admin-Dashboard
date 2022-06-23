@@ -7,19 +7,19 @@
     <title>Admin-Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,400;0,700;1,400&family=Nanum+Gothic:wght@400;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,500;1,600;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="nav">
-        <div class="logo"><img src="assets/grid.svg">Dashboard</div>
+        <div class="logo"><img src="assets/grid.svg"> Dashboard</div>
         <ul class="menu">
-            <li><img src="assets/home.svg">Home</li>
-            <li><img src="assets/user.svg">Profile</li>
-            <li><img src="assets/msg.svg">Messages</li>
-            <li><img src="assets/clock.svg">History</li>
-            <li><img src="assets/list.svg">Tasks</li>
-            <li><img src="assets/users.svg">Communities</li>
+            <li><img class="icon" src="assets/home.svg">&emsp;Home</li>
+            <li><img class="icon" src="assets/user.svg">&emsp;Profile</li>
+            <li><img class="icon" src="assets/msg.svg">&emsp;Messages</li>
+            <li><img class="icon" src="assets/clock.svg">&emsp;History</li>
+            <li><img class="icon" src="assets/list.svg">&emsp;Tasks</li>
+            <li><img class="icon" src="assets/users.svg">&emsp;Communities</li>
         </ul>
         <ul class="menu">
             <li>Settings</li>
@@ -29,17 +29,17 @@
     </nav>
     <header>
         <div class="search"><i id="searchIcon"><img src="assets/search.svg"></i>
-            <input type="search">
+            <input type="search" placeholder="Search...">
         </div>
         <div class="profile">
             <img src="assets/notif.svg">
+            <span><h3>Alastair Farman</h3></span>
             <img id="profilePicSmall" src="assets/pp.jpeg">
-            <span>Alastair Farman</span>
+            
         </div>
         <div class="intro">
             <img id="profilePicMed" src="assets/pp.jpeg">
-            <span>hi</span>
-            <div>Alastair Farman (user)</div>
+            <div id="welcome"><span>Good afternoon,</span><div>Alastair!</div></div>
         </div>
         <div class="action">
             <button>New</button>
@@ -49,22 +49,27 @@
     </header>
     <main>
         <div class="projects">
-            <h4 class="mainHeading">Your Projects</h4>
-            <div class="projectCell"><h5>Calculator</h5></div>
-            <div class="projectCell"><h5>Rock Paper Scissors</h5></div>
-            <div class="projectCell"><h5>Etch-a-Sketch</h5></div>
-            <div class="projectCell"><h5>Sign-up Form</h5></div>
-            <div class="projectCell"><h5>Admin Dashboard</h5></div>
-            <div class="projectCell"><h5>Start a new project...</h5></div>
+            <h3 class="mainHeading">Your Projects</h3>
+            <div class="projectCell"><div><h4>Calculator</h4><p>This was a calculator project. Please don't abuse the decimal button because I forgot to disable it after one press and it breaks.</p></div>
+                <div class="prjIcons"><img src="assets/star.svg"><img src="assets/bookmark.svg"><img src="assets/share.svg"></div></div>
+                <div class="projectCell"><div><h4>Rock, Paper, Scissors</h4><p>The first of The Odin Project projects, a digital recreation of time's most brutal form of hand-to-hand combat. It sorta works, but </p></div>
+                <div class="prjIcons"><img src="assets/star.svg"><img src="assets/bookmark.svg"><img src="assets/share.svg"></div></div>
+                <div class="projectCell"><div><h4>Admin Dashboard</h4><p>This is project inception. If you could click this it would be an example of recursion, an endless loop of self-reference.</p></div>
+                <div class="prjIcons"><img src="assets/star.svg"><img src="assets/bookmark.svg"><img src="assets/share.svg"></div></div>
+                <div class="projectCell"><div><h4>Etch-a-Sketch</h4><p>The Etch-a-Sketch project worked pretty well on desktop, but turns out you can't hover on a mobile device.</p></div>
+                <div class="prjIcons"><img src="assets/star.svg"><img src="assets/bookmark.svg"><img src="assets/share.svg"></div></div>
+                <div class="projectCell"><div><h4>Sign-up Form</h4><p>A project that was relatively easy, although that's before linking the form up to actually function.</p></div>
+                <div class="prjIcons"><img src="assets/star.svg"><img src="assets/bookmark.svg"><img src="assets/share.svg"></div></div>
+            <div class="projectCell"><h4>Start a new project...</h4><p></p></div>
         </div>
         <div class="announcements">
-            <h4 class="mainHeading">Announcements</h4>
-            <div>A</div>
-            <div>A</div>
-            <div>A</div>
+            <h3 class="mainHeading">Announcements</h3>
+            <div id="one"><h5>Site Maintenence</h5><p>Put in in a deck for our standup today bells and whistles, or face time, marketing computer development html roi feedback team website, but player-coach. Put it on the parking lot create spaces to explore</p></div>
+            <div id="two"><h5>Community Share Day</h5><p>Define the underlying principles that drive decisions and strategy for your design language golden goose, nor i need to pee and then go to another meeting. Good optics the right info at the right time to the right people but we need a paradigm shift, but deep dive and can you ballpark </p></div>
+            <div id="three"><h5>Updated Privacy Policy</h5><p>Tiger team strategic fit, for clear blue water get buy-in one-sheet, nor closer to the metal optics. That is a good problem to have crank this out for today shall be a cloudy day, thanks to blue sky thinking, we can now deploy our new ui to the cloud yet</p></div>
         </div>
         <div class="trending">
-            <h4 class="mainHeading">Trending</h4>
+            <h3 class="mainHeading">Trending</h3>
             <div>T</div>
             <div>T</div>
             <div>T</div>
