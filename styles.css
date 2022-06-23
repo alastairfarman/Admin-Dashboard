@@ -43,6 +43,23 @@ header{
     .search{
         grid-column-start: 1;
         grid-column-end: 6;
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    #searchIcon{
+        padding-right: 1rem;
+        
+    }
+
+    input{
+        padding: 1rem;
+        border-radius: 20px;
+        box-sizing: border-box;
+        border: none;
+        width: 100%;
+        height:1rem;
     }
 
     .profile{
@@ -51,9 +68,32 @@ header{
         justify-self: end;
     }
 
+    #profilePicSmall{
+        width: 60px;
+        border-radius: 50%;
+        border: solid;
+        border-width: 1px;
+        border-color: #F7F2F5;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2), -5px -5px 10px rgba(255,255,255,0.6);
+    }
+
+    #profilePicMed{
+        width: 100px;
+        border-radius: 50%;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border: solid;
+        border-width: 1px;
+        border-color: #F7F2F5;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2), -5px -5px 10px rgba(255,255,255,0.6);
+    }
+
     .intro{
         grid-column-start: 1;
         grid-column-end: 6;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 3fr;
     }
 
     .action{
@@ -83,9 +123,18 @@ main {
     }
 
     .projectCell{
-        background-color: #F7F2F5;
+        background-color: rgba(247,242,245,0.4);
         margin: 1rem;
         border-radius: 10px;
+        border-top:solid;
+        border-top-width: 10px;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, #FF6978, #d53a9d);
+        box-sizing: border-box;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+        padding-left: 1rem;
+
+
     }
 
     .announcements{
@@ -108,11 +157,4 @@ main {
         grid-column-end: -1;
     }
 
-    input{
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        border-radius: 20px;
-        box-sizing: border-box;
-        border: none;
-    }
+    
